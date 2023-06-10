@@ -1,0 +1,510 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zero Swaps on All XM Ultra Low Accounts for more than 25 instruments!" />
+
+    <title>XM - Zero Swaps</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/52d52ff851.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div id="logo">
+                <a href="#">
+                    <img src="assets/img/xm-logo.svg" alt="XM Logo">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a rel="external" href="https://xm.com" target="_blank">
+                            XM Homepage
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Support
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="page-top">
+            <div class="hero">
+                <div class="hero__inner">
+                    <div class="hero__subtitle">trade with</div>
+                    <div class="hero__title">
+                        <h1><strong>Zero Swaps</strong> on All XM Ultra Low Accounts for more than 25 instruments!</h1>
+                    </div>
+                    <div class="hero__info">
+                        Enjoy spreads <strong>as low as 0.6 pips</strong> and <strong>leverage up to 1000:1</strong> on
+                        instruments
+                        like <strong>EURUSD, USDJPY, EURJPY,
+                            GBPUSD,</strong> and <strong>Gold.</strong>
+                    </div>
+                    <div class="hero__button">
+                        <button class="button button--block">
+                            open account
+                        </button>
+                    </div>
+                    <div class="hero__demo">
+                        New to trading? Try a <a href="#">Demo account</a>.
+                    </div>
+                    <div class="hero__terms">
+                        Terms and Conditions apply<sup>*</sup>. To read the full T&Cs, <a href="#">click here</a>.
+                    </div>
+                </div>
+            </div>
+            <section class="section">
+                <div class="container">
+                    <div class="crypto__list">
+                        <div class="crypto" id="btc">
+                            <div class="crypto__top">
+                                <div class="crypto__logo">
+                                    <img src="assets/img/xm-btc-logo.svg" alt="BTC Logo">
+                                </div>
+                                <div class="crypto__symbol">btc</div>
+                                <div class="crypto__name">bitcoin</div>
+                            </div>
+                            <div class="crypto__bottom">
+                                <div class="crypto__price">$<span id="btc__price"></span></div>
+                                <div class="crypto__percent">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                    <span id="btc__percent"></span>%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crypto" id="eth">
+                            <div class="crypto__top">
+                                <div class="crypto__logo">
+                                    <img src="assets/img/xm-eth-logo.svg" alt="ETH Logo">
+                                </div>
+                                <div class="crypto__symbol">eth</div>
+                                <div class="crypto__name">ethereum</div>
+                            </div>
+                            <div class="crypto__bottom">
+                                <div class="crypto__price">$<span id="eth__price"></span></div>
+                                <div class="crypto__percent">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                    <span id="eth__percent"></span>%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crypto" id="xrp">
+                            <div class="crypto__top">
+                                <div class="crypto__logo">
+                                    <img src="assets/img/xm-xrp-logo.svg" alt="XRP Logo">
+                                </div>
+                                <div class="crypto__symbol">xrp</div>
+                                <div class="crypto__name">ripple</div>
+                            </div>
+                            <div class="crypto__bottom">
+                                <div class="crypto__price">$<span id="xrp__price"></span></div>
+                                <div class="crypto__percent">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                    <span id="xrp__percent"></span>%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crypto" id="ltc">
+                            <div class="crypto__top">
+                                <div class="crypto__logo">
+                                    <img src="assets/img/xm-ltc-logo.svg" alt="LTC Logo">
+                                </div>
+                                <div class="crypto__symbol">ltc</div>
+                                <div class="crypto__name">litecoin</div>
+                            </div>
+                            <div class="crypto__bottom">
+                                <div class="crypto__price">$<span id="ltc__price"></span></div>
+                                <div class="crypto__percent">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                    <span id="ltc__percent"></span>%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crypto" id="bch">
+                            <div class="crypto__top">
+                                <div class="crypto__logo">
+                                    <img src="assets/img/xm-bch-logo.svg" alt="BCH Logo">
+                                </div>
+                                <div class="crypto__symbol">bch</div>
+                                <div class="crypto__name">bitcoin cash</div>
+                            </div>
+                            <div class="crypto__bottom">
+                                <div class="crypto__price">$<span id="bch__price"></span></div>
+                                <div class="crypto__percent">
+                                    <i class="fa-solid fa-circle-chevron-up"></i>
+                                    <span id="bch__percent"></span>%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="advantages">
+                        <div class="advantages__intro">
+                            <div class="advantages__title">
+                                <h2>Why <strong>Trade</strong> with XM?</h2>
+                            </div>
+                            <div class="advantages__divider"></div>
+                            <div class="advantages__text">We have been providing traders around the world with the same
+                                <strong>premium experience</strong> for over a decade. As an
+                                <strong>industry-leader</strong>, we know what the modern
+                                trader
+                                needs to be <strong>successful</strong> in the markets.
+                            </div>
+                        </div>
+                        <div class="advantages__list">
+                            <div class="advantage">
+                                <div class="advantage__title">
+                                    <h3>Superior Trade Execution</h3>
+                                </div>
+                                <div class="advantages__divider"></div>
+                                <div class="advantage__text">
+                                    <strong>99%</strong> of trades are executed in <strong>less than a second,</strong>
+                                    with no requotes or rejections.
+                                </div>
+                                <div class="advantage__img">
+                                    <img src="assets/img/xm-fast-execusion-icon.png" alt="Lightning icon">
+                                </div>
+                            </div>
+                            <div class="advantage">
+                                <div class="advantage__title">
+                                    <h3>Competitive Pricing</h3>
+                                </div>
+                                <div class="advantages__divider"></div>
+                                <div class="advantage__text">
+                                    We offer some of the <strong>lowest spreads</strong> and we don't charge
+                                    commissions.
+                                </div>
+                                <div class="advantage__img">
+                                    <img src="assets/img/xm-competitive-pricing-icon.png" alt="Percent icon">
+                                </div>
+                            </div>
+                            <div class="advantage">
+                                <div class="advantage__title">
+                                    <h3>Advanced Technology</h3>
+                                </div>
+                                <div class="advantages__divider"></div>
+                                <div class="advantage__text">
+                                    Trade on <strong>MT4</strong> or <strong>MT5</strong>, with expert tools, across
+                                    desktop, web and mobile.
+                                </div>
+                                <div class="advantage__img">
+                                    <img src="assets/img/xm-tech-icon.png" alt="Tech icon">
+                                </div>
+                            </div>
+                            <div class="advantage">
+                                <div class="advantage__title">
+                                    <h3>Start with $5</h3>
+                                </div>
+                                <div class="advantages__divider"></div>
+                                <div class="advantage__text">
+                                    Start trading your preferred instruments with as little as a <strong>$5 minimum
+                                        deposit.</strong>
+                                </div>
+                                <div class="advantage__img">
+                                    <img src="assets/img/xm-dollar-icon.png" alt="Dollar icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="registration">
+                        <div class="registration__intro">
+                            <div class="registration__title">
+                                <h3>- Register Here -</h3>
+                            </div>
+                            <div class="registration__text">Join us to celebrate our biggest night of the year.</div>
+                            <div class="registration__details">
+                                <div class="registration__item">
+                                    <div class="registration__icon">
+                                        <img src="assets/img/fa-calendar-check.svg" alt="FontAwesome calendar icon">
+                                    </div>
+                                    <div class="registration__info">
+                                        05 NOVEMBER 2022
+                                    </div>
+                                </div>
+                                <div class="registration__item">
+                                    <div class="registration__icon">
+                                        <img src="assets/img/fa-clock.svg" alt="FontAwesome clock icon">
+                                    </div>
+                                    <div class="registration__info">
+                                        16:00 - 23:00
+                                    </div>
+                                </div>
+                                <div class="registration__item">
+                                    <div class="registration__icon">
+                                        <img src="assets/img/fa-location-dot.svg" alt="FontAwesome pin icon">
+                                    </div>
+                                    <div class="registration__info">
+                                        Centara Grand & Bangkok Convention Centre, Bangkok
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration__form">
+                            <form action="post" class="form">
+                                <div class="form__fields">
+                                    <div class="form__field">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" required>
+                                        <div class="field__messages field__messages--hidden">
+                                            <ul>
+                                                <li>Please Enter Valid Email</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form__field">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="password" required minlength="8"
+                                            maxlength="15"
+                                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[#\[\]()@$&*!?|,.^/\\+_-]).{8,15}$"
+                                            title="The password must meet the conditions below.">
+                                        <div class="field__messages">
+                                            <ul>
+                                                <li id="8-5">8 - 15 characters</li>
+                                                <li id="1-or-more-numbers">1 or more numbers</li>
+                                                <li id="1-or-more-lowercase">1 or more lower case letters</li>
+                                                <li id="1-or-more-uppercase">1 or more upper case letters</li>
+                                                <li id="1-or-more-special">1 or more special characters
+                                                    (#[]()@$&*!?|,.^/\+_-)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__success form__success--hidden">
+                                    <div class="form-success__title">
+                                        <div class="form-success__icon">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <h3>Registration Successful</h3>
+                                    </div>
+                                    <div class="form-success__text">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        <span>Thank you for registering for our event with XM. You will receive an email
+                                            shortly with confirmation of your registration.</span>
+                                    </div>
+                                </div>
+                                <div class="form__button">
+                                    <button type="button" class="button button--block" disabled>Register now</button>
+                                </div>
+                                <div class="form__account">
+                                    Don't have an account? <a href="#">Create one here</a> and register for the event.
+                                </div>
+                                <div class="form__terms">
+                                    Terms and Conditions apply<sup>*</sup>. To read the full T&Cs, <a href="#">click
+                                        here</a>.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="page-bottom">
+            <section class="section section--gray">
+                <div class="container">
+                    <div class="events">
+                        <div class="events__title">
+                            <h3>Event Gallery</h3>
+                        </div>
+                        <div class="events__carousel" id="events__carousel">
+                            <div><figure><span></span></figure></div>
+                            <div><figure><span></span></figure></div>
+                            <div><figure><span></span></figure></div>
+                            <div><figure><span></span></figure></div>
+                            <div><figure><span></span></figure></div>
+                            <div><figure><span></span></figure></div>
+                            <div><figure><span></span></figure></div>
+                            <div><figure><span></span></figure></div>
+                            <div><figure><span></span></figure></div>
+                            <div><figure><span></span></figure></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="about">
+                        <div class="about__intro">
+                            <div class="about__title">
+                                <div class="about__divider"></div>
+                                <h2>Big<span>.</span> Fair<span>.</span> Human<span>.</span></h2>
+                            </div>
+                            <div class="about__learn">
+                                Learn why <strong>over 5 million clients choose XM</strong> as their trusted online
+                                broker.
+                            </div>
+                        </div>
+                        <div class="about__items">
+                            <div class="about__item">
+                                <div class="about__icon">
+                                    <img src="assets/img/xm-authorised-icon.svg" alt="Authorised icon">
+                                </div>
+                                <div class="about_item__title">
+                                    <h3>Authorised and Regulated</h3>
+                                </div>
+                                <div class="about_item__text">
+                                    At XM, we adhere to all regulatory standards and are fully authorised and regulated
+                                    by FSC.
+                                </div>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__icon">
+                                    <img src="assets/img/xm-commited-icon.svg" alt="Committed icon">
+                                </div>
+                                <div class="about_item__title">
+                                    <h3>Committed and Fair</h3>
+                                </div>
+                                <div class="about_item__text">
+                                    We operate with complete transparency and adhere to the highest professional and
+                                    ethical standards.
+                                </div>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__icon">
+                                    <img src="assets/img/xm-award-icon.svg" alt="Award icon">
+                                </div>
+                                <div class="about_item__title">
+                                    <h3>Multi-Award-Winning</h3>
+                                </div>
+                                <div class="about_item__text">
+                                    Over the years we have received over 40 awards for the quality of our products and
+                                    services.
+                                </div>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__icon">
+                                    <img src="assets/img/xm-24-7-icon.svg" alt="24/7 icon">
+                                </div>
+                                <div class="about_item__title">
+                                    <h3>24/7 Support</h3>
+                                </div>
+                                <div class="about_item__text">
+                                    Our support agents are on hand 24/7 to answer your questions or assist you with any
+                                    issues.
+                                </div>
+                            </div>
+                            <div class="about__dividers">
+                                <span>
+                                    <span>
+                                        <span class="about-dividers-dot"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logos">
+                    <div class="footer__logo">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/metaquotes-logo.png" alt="MetaQuotes logo">
+                        </a>
+                    </div>
+                    <div class="footer__logo">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/verisign-logo.png" alt="Verisign logo">
+                        </a>
+                    </div>
+                    <div class="footer__logo">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/unicef-logo.png" alt="Unicef logo">
+                        </a>
+                    </div>
+                    <div class="footer__logo">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/iip-logo.png" alt="Investors in People logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <span>Follow us on</span>
+                    <div class="footer__icons">
+                        <div class="footer__icon">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="footer__icon">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="footer__icon">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="footer__icon">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="footer__icon">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__links">
+                    <ul>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookie Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__trading">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/tradingpoint-logo.png" alt="TradingPoint Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
